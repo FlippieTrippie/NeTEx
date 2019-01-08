@@ -677,6 +677,26 @@ Rail transport, Roads and Road transport
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element ref="StretchRef" minOccurs="0"/>
+			<xsd:element name="StartTime" type="xsd:time" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Start time.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="StartDayOffset" type="DayOffsetType" default="0" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Day offset for start time. Number of days after the starting departure time of the journey if not same calendar day. Default is 0 for same day.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="EndTime" type="xsd:time" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>End time.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="EndDayOffset" type="DayOffsetType" default="0" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Day offset for end time. Number of days after the starting departure time of the journey if not same calendar day. Default is 0 for same day.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
 			<xsd:element name="StartReliefOpportunityRef" type="ReliefOpportunityRefStructure" minOccurs="0"/>
 			<xsd:element name="EndReliefOpportunityRef" type="ReliefOpportunityRefStructure" minOccurs="0"/>
 			<xsd:element ref="BlockRef" minOccurs="0"/>
@@ -690,6 +710,7 @@ Rail transport, Roads and Road transport
 			<xsd:documentation>Elements for a NON DRIVING SPELL.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
+			<xsd:element ref="StretchRef" minOccurs="0"/>
 			<xsd:element name="StartTime" type="xsd:time" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Start time.</xsd:documentation>
