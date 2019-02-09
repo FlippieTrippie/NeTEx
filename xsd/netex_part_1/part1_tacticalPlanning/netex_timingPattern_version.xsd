@@ -179,9 +179,11 @@ Rail transport, Roads and Road transport
 						<xsd:sequence>
 							<xsd:group ref="TimingPointGroup"/>
 						</xsd:sequence>
+						<!-- Doesn't work in XJB
 						<xsd:sequence>
 				            <xsd:element ref="PrivateCode" minOccurs="0"/>
 						</xsd:sequence>
+						-->
 					</xsd:sequence>
 					<xsd:attribute name="id" type="TimingPointIdType"/>
 				</xsd:restriction>
