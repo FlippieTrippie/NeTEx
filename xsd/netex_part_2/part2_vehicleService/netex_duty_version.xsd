@@ -394,7 +394,7 @@ Rail transport, Roads and Road transport
 			<xsd:documentation>Type for DRIVER TRIP.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
-			<xsd:extension base="DataManagedObjectStructure">
+			<xsd:extension base="AccountableElementStructure">
 				<xsd:sequence>
 					<xsd:group ref="DriverTripGroup"/>
 				</xsd:sequence>
