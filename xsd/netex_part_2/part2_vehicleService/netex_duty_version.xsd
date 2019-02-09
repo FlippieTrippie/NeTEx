@@ -335,14 +335,19 @@ Rail transport, Roads and Road transport
 					<xsd:documentation>Start time.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element name="StartTimeDayOffset" type="DayOffsetType" default="0" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Day offset for start time. Number of days after the starting departure time of the journey if not same calendar day. Default is 0 for same day.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
 			<xsd:element name="EndTime" type="xsd:time" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>End time.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="DayOffset" type="DayOffsetType" default="0" minOccurs="0">
+			<xsd:element name="EndTimeDayOffset" type="DayOffsetType" default="0" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Day offset for end time. Number of days after the starting departure time of the journey if  not same calendar day. Default is 0 for same day.</xsd:documentation>
+					<xsd:documentation>Day offset for end time. Number of days after the starting departure time of the journey if not same calendar day. Default is 0 for same day.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="StartPointRef" type="TimingPointRefStructure" minOccurs="0">
@@ -499,7 +504,7 @@ Rail transport, Roads and Road transport
 					<xsd:documentation>How long the DRIVER TRIP takes.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="TransportMode" type="VehicleModeEnumeration" minOccurs="0">
+			<xsd:element name="TransportMode" type="AllVehicleModesOfTransportEnumeration" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Mode of Transport.</xsd:documentation>
 				</xsd:annotation>
