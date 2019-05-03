@@ -234,11 +234,11 @@ Rail transport, Roads and Road transport
 					<xsd:documentation>The Trading name of the ORGANISATION given to the Public - If different from Name or Legal Name.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="alternativeNames" type="alternativeNames_RelStructure" minOccurs="0">
-				<xsd:annotation>
-					<xsd:documentation>Alternativie names for ORGANISATION.</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
+			<!-- <xsd:element name="alternativeNames" type="alternativeNames_RelStructure" minOccurs="0"> -->
+				<!-- <xsd:annotation> -->
+					<!-- <xsd:documentation>Alternativie names for ORGANISATION.</xsd:documentation> -->
+				<!-- </xsd:annotation> -->
+			<!-- </xsd:element> -->
 		</xsd:sequence>
 	</xsd:group>
 	<xsd:group name="OrganisationPropertiesGroup">
